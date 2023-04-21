@@ -7,7 +7,6 @@ function addEvent() {
   } else {
     // adding an "li"
     let li = document.createElement("li")
-    // li.innerHTML = added_task
     li.className = "lyst"
     document.querySelector('.ul').appendChild(li)
 
@@ -16,12 +15,12 @@ function addEvent() {
     task.innerHTML = added_task
     task.className = "ptag"
     li.appendChild(task)
-    added_task = ""
 
     //create a span that will contain all the buttons
     const actionbtn = document.createElement('div')
     li.appendChild(actionbtn)
 
+    // creating a check button
     let checkbtn = document.createElement('button')
     checkbtn.innerHTML = '<i class="fa-solid fa-check"></i>'
     checkbtn.className = "checkbtn"
@@ -30,6 +29,7 @@ function addEvent() {
     // creating a delete btn
     const deleteBtn = document.createElement('button')
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>'
+    deleteBtn.className = "deleteBtn"
     actionbtn.appendChild(deleteBtn)
 
     //function to delete task
@@ -42,16 +42,14 @@ function addEvent() {
       let todoContainer = document.querySelector('.ul')
       todoContainer[0] = li.style.textDecoration = "line-through"
     })
-
+    // removing line-through function
     checkbtn.addEventListener('dblclick', function() {
       let todoContainer = document.querySelector('.ul')
       todoContainer[0] = li.style.textDecoration = "none"
     })
-
   }
-  
+  added_task = ""
   // saveData()
-  
 }
 
 // function saveData() {

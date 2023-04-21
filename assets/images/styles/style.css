@@ -1,50 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'Bitter', serif;
 }
 
 body {
   padding: 0;
   margin: 0;
+  background-image: linear-gradient(115deg, #bb690ccc, #ac8827b3), url("https://files.promostore.de/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/2/8/89ca099c4f841746beb653545955c6ae/Relatiegeschenk-Blocknote-A5-van-bamboe-855430923.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .maincontainer {
   width: 50%;
-  border: 1px solid black;
+  border: 1px solid #c7901875;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px 20px 5px 0;
+  margin: 10px auto;
+  background: #bb690c63;
+  box-shadow: 0 3px 7px 0 #232425;
 }
 
 h1 {
-  color: red;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
 }
 
-.left {
-  padding-right: 15px;
-  float: right;
-  
-}
-
-.search {
-  padding: 5px 0;
-}
-
-.fa-solid {
-  cursor: pointer;
-}
-
-.submit {
-  cursor: pointer;
+.all {
+  display: flex;
+  width: 100%;
 }
 
 .list {
-  width: 100%;
-  /* padding-top: 30px; */
+  width: 60%;
+  padding-left: 20px;
 }
 
-.submit,
 .event {
-  padding: 5px 0;
+  width: 80%;
+  padding: 8px 0;
+}
+.submit {
+  padding: 8px;
+  width: 10%;
+  cursor: pointer;
+}
+
+.left {
+  width: 40%;
+  padding-right: 15px 0 15px;
+}
+
+.search {
+  width: 70%;
+  padding: 10px 0;
+  margin-left: 20px;
+}
+
+.fa-magnifying-glass {
+  width: 12%;
+  padding: 10px !important;
+}
+
+.fa-solid {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.fa-solid:hover {
+  transform: translateY(3px);
 }
 
 .spann {
@@ -52,38 +80,66 @@ h1 {
   font-style: italic;
 }
 
-.event {
-  width: 300px;
-}
-
 .ul {
+  width: 95%;
   list-style: none;
+  padding: 0 auto;
 }
 
 .lyst {
   border: 1px solid black;
+  border-radius: 5px;
   display: flex;
+  width: 100%;
+}
+
+.ptag {
+  font-size: 20px;
+  padding-left: 10px;
   flex: 1;
-  /* padding: 8px 0; */
-}
-
-p {
-  flex: 1;
-}
-
-.tick {
-  color: green;
-}
-
-.cross {
-  color: red;
 }
 
 .checkbtn {
-  /* background: green; */
+  color: green;
 }
 
-.fa-solid {
-  padding: 5px;
-  border: none;
+.deleteBtn {
+  color: red;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .maincontainer {
+    width: 90%;
+  }
+
+  .all {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .event {
+    width: 80%;
+
+  }
+
+  .submit {
+    width: 20%;
+  }
+
+  .left {
+    width: 90%;
+
+  }
+
+  .search {
+    width: 75%;
+  }
 }
