@@ -8,15 +8,17 @@
 body {
   padding: 0;
   margin: 0;
+  background-image: linear-gradient(115deg, #bb690ccc, #ac8827b3), url("https://files.promostore.de/catalog/product/cache/3/image/9df78eab33525d08d6e5fb8d27136e95/2/8/89ca099c4f841746beb653545955c6ae/Relatiegeschenk-Blocknote-A5-van-bamboe-855430923.jpg");
+  background-size: cover;
 }
 
 .maincontainer {
   width: 50%;
-  border: 1px solid #2b96d479;
+  border: 1px solid #c78f1879;
   border-radius: 5px;
   padding: 10px 20px 5px 0;
   margin: 10px auto;
-  background: #377dc236;
+  background: #bb690c69;
   box-shadow: 0 3px 7px 0 #232425;
 }
 
@@ -28,8 +30,6 @@ h1 {
 
 .all {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
   width: 100%;
 }
 
