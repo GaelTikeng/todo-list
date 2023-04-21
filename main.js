@@ -30,6 +30,7 @@ function addEvent() {
     // creating a delete btn
     const deleteBtn = document.createElement('button')
     deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>'
+    deleteBtn.className = "deleteBtn"
     actionbtn.appendChild(deleteBtn)
 
     //function to delete task
