@@ -50,7 +50,7 @@ h1 {
 
 .left {
   width: 40%;
-  padding-right: 15px 0px 15px;
+  padding-right: 15px 0 15px;
 }
 
 .search {
@@ -100,7 +100,6 @@ h1 {
 
 .checkbtn {
   color: green;
-  
 }
 
 .deleteBtn {
