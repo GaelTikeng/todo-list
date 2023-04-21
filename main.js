@@ -16,12 +16,12 @@ function addEvent() {
     task.innerHTML = added_task
     task.className = "ptag"
     li.appendChild(task)
-    added_task = ""
 
     //create a span that will contain all the buttons
     const actionbtn = document.createElement('div')
     li.appendChild(actionbtn)
 
+    // creating a check button
     let checkbtn = document.createElement('button')
     checkbtn.innerHTML = '<i class="fa-solid fa-check"></i>'
     checkbtn.className = "checkbtn"
@@ -48,11 +48,9 @@ function addEvent() {
       let todoContainer = document.querySelector('.ul')
       todoContainer[0] = li.style.textDecoration = "none"
     })
-
   }
-  
+  added_task = ""
   // saveData()
-  
 }
 
 // function saveData() {

@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,700;1,400&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'Bitter', serif;
 }
 
 body {
@@ -9,46 +12,66 @@ body {
 
 .maincontainer {
   width: 50%;
-  border: 1px solid black;
+  border: 1px solid #2b96d479;
   border-radius: 5px;
   padding: 10px 20px 5px 0;
   margin: 10px auto;
+  background: #377dc236;
   box-shadow: 0 3px 7px 0 #232425;
 }
 
 h1 {
-  color: red;
+  font-size: 40px;
+  font-weight: 700;
   text-align: center;
 }
 
+.all {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  width: 100%;
+}
+
+.list {
+  width: 60%;
+  padding-left: 20px;
+}
+
+.event {
+  width: 80%;
+  padding: 8px 0;
+}
+.submit {
+  padding: 8px;
+  width: 10%;
+  cursor: pointer;
+}
+
 .left {
-  padding-right: 15px 10px 15px;
-  float: right;
+  width: 40%;
+  padding-right: 15px 0px 15px;
 }
 
 .search {
-  padding: 8px 0;
+  width: 70%;
+  padding: 10px 0;
+  margin-left: 20px;
+}
+
+.fa-magnifying-glass {
+  width: 12%;
+  padding: 10px !important;
 }
 
 .fa-solid {
-  padding: 5px 8px;
+  padding: 10px;
   border: none;
   cursor: pointer;
 }
 
-.submit {
-  padding: 0 8px;
-  cursor: pointer;
-}
-
-.list {
-  width: 100%;
-  padding-left: 20px;
-}
-
-.submit,
-.event {
-  padding: 8px 0;
+.fa-solid:hover {
+  transform: translateY(3px);
 }
 
 .spann {
@@ -56,11 +79,8 @@ h1 {
   font-style: italic;
 }
 
-.event {
-  width: 300px;
-}
-
 .ul {
+  width: 95%;
   list-style: none;
   padding: 0 auto;
 }
@@ -69,6 +89,7 @@ h1 {
   border: 1px solid black;
   border-radius: 5px;
   display: flex;
+  width: 100%;
 }
 
 .ptag {
@@ -79,14 +100,46 @@ h1 {
 
 .checkbtn {
   color: green;
+  
 }
 
 .deleteBtn {
   color: red;
+  padding-left: 10px;
 }
 
-@media screen and (max-with: 600px) {
+@media screen and (max-width: 600px) {
   .maincontainer {
+    width: 90%;
+  }
+
+  .all {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
     width: 100%;
+    margin: 0 auto;
+  }
+
+  .list {
+    width: 100%;
+  }
+
+  .event {
+    width: 80%;
+
+  }
+
+  .submit {
+    width: 20%;
+  }
+
+  .left {
+    width: 90%;
+
+  }
+
+  .search {
+    width: 75%;
   }
 }
