@@ -7,7 +7,6 @@ function addEvent() {
   } else {
     // adding an "li"
     let li = document.createElement("li")
-    // li.innerHTML = added_task
     li.className = "lyst"
     document.querySelector('.ul').appendChild(li)
 
@@ -43,7 +42,7 @@ function addEvent() {
       let todoContainer = document.querySelector('.ul')
       todoContainer[0] = li.style.textDecoration = "line-through"
     })
-
+    // removing line-through function
     checkbtn.addEventListener('dblclick', function() {
       let todoContainer = document.querySelector('.ul')
       todoContainer[0] = li.style.textDecoration = "none"

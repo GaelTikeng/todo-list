@@ -14,11 +14,11 @@ body {
 
 .maincontainer {
   width: 50%;
-  border: 1px solid #c78f1879;
+  border: 1px solid #c7901875;
   border-radius: 5px;
   padding: 10px 20px 5px 0;
   margin: 10px auto;
-  background: #bb690c69;
+  background: #bb690c63;
   box-shadow: 0 3px 7px 0 #232425;
 }
 
